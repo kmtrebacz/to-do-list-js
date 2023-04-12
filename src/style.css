@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+}
+
+input[type="text"] {
+    width: 290px;
+    padding: 9px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 9px 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+.content {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.element{
+    max-width: 347px;
+    display: flex;
+}
+
+.element_cont{
+    width: calc(100%  - 73px);
+    display: flex;
+    align-items: center;
+}
+
+.element input[type=button]{
+    background-color: #cc4949;
+    height: 42px;
+}
+
+.element input[type=button]:hover{
+    background-color: #bb4545;
+}
+
+@media screen and (max-width: 400px) {
+    input[type="text"] {
+        width: 100%;
+    }
+
+    input[type="button"] {
+        width: 100%;
+    }
+
+    .element{
+        display: block;
+    }
+
+    .element_cont{
+        width: 100%;
+    }
+}
