@@ -2,24 +2,32 @@
 
 main {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Ubuntu", sans-serif;
 }
 
+.content{
+    width: 520px;
+}
+
+#header{
+  margin-bottom: 2px;
+}
+
 input[type="text"] {
-    width: 290px;
+    width: calc(100% -  57px);
     padding: 9px 12px;
-    margin: 8px 0;
+    margin: 0 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-input[type="button"] {
+input[type="button"], .edit_btn {
     background-color: #4caf50;
     color: white;
     padding: 9px 12px;
@@ -30,8 +38,12 @@ input[type="button"] {
     transition: 0.2s;
 }
 
-input[type="button"]:hover {
+input[type="button"]:hover, .edit_btn:hover {
     background-color: #45a049;
+}
+
+.element_cont{
+    padding: 0 12px;
 }
 
 .content {
@@ -41,31 +53,36 @@ input[type="button"]:hover {
 }
 
 .element{
-    max-width: 347px;
+    max-width: 472px;
     display: flex;
 }
 
 .element_cont{
-    width: calc(100%  - 73px);
+    width: calc(100%  - 130px);
     display: flex;
     align-items: center;
 }
 
-.element input[type=button]{
+.element .del_btn{
     background-color: #cc4949;
     height: 42px;
 }
 
-.element input[type=button]:hover{
+.element .del_btn:hover{
     background-color: #bb4545;
 }
 
-@media screen and (max-width: 400px) {
+hr{
+  margin: 0 2px;
+  border-top: 1px solid #a3a3a3;
+}
+
+@media screen and (max-width: 450px) {
     input[type="text"] {
         width: 100%;
     }
 
-    input[type="button"] {
+    input[type="button"]{
         width: 100%;
     }
 
@@ -73,7 +90,15 @@ input[type="button"]:hover {
         display: block;
     }
 
+    .btn_container{
+        display: flex;
+    }
+
     .element_cont{
         width: 100%;
+    }
+
+    input[type="button"].del_btn, input[type="button"].edit_btn{
+        width: 50%;
     }
 }
