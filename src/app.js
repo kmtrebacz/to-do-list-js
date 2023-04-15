@@ -6,8 +6,7 @@ let i = 1
 
 element_btn.addEventListener('click', () => {
 
-elements_list.innerHTML = elements_list.innerHTML + `<hr id="hr_${i}"><div class="element" id="element_${i}"><div class="element_cont">${element_text.value}</div><div class="btn_container"><input type="button" value="Edit" class="edit_btn"><input type="button" value="Delete" class="del_btn ms-1" onclick="del_element('${i}')"></div>
-  </div>`
+elements_list.innerHTML = elements_list.innerHTML + `<hr id="hr_${i}"><div class="element" id="element_${i}"><div class="element_cont">${element_text.value}</div><div class="btn_container"><input type="button" value="Delete" class="del_btn ms-1" onclick="del_element('${i}')"></div></div>`
   i++
 })
 

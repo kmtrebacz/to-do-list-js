@@ -27,7 +27,7 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
-input[type="button"], .edit_btn {
+input[type="button"]{
     background-color: #4caf50;
     color: white;
     padding: 9px 12px;
@@ -38,7 +38,7 @@ input[type="button"], .edit_btn {
     transition: 0.2s;
 }
 
-input[type="button"]:hover, .edit_btn:hover {
+input[type="button"]:hover{
     background-color: #45a049;
 }
 
@@ -58,7 +58,7 @@ input[type="button"]:hover, .edit_btn:hover {
 }
 
 .element_cont{
-    width: calc(100%  - 130px);
+    width: calc(100%  - 74px);
     display: flex;
     align-items: center;
 }
@@ -98,7 +98,8 @@ hr{
         width: 100%;
     }
 
-    input[type="button"].del_btn, input[type="button"].edit_btn{
-        width: 50%;
+    input[type="button"].del_btn{
+        width: 75%;
+        margin: 0 auto;
     }
 }
